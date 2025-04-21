@@ -12,7 +12,7 @@ public class Income {
         return type;
     }
 
-    public double getAmount() {
+    public static double getAmount() {
         return amount;
     }
 
