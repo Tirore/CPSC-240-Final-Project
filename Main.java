@@ -48,4 +48,22 @@ public class Main {
         writer.close();
     }
 
+    public void importData( String filePath) throws IOException {
+        BufferedReader reader = new BufferedReader(new FileReader(filePath));
+        String line;
+        while ((line = reader.readLine()) != null) {
+            String[] parts = line.split(",");
+            try {
+                if (parts[0].equalsIgnoreCase("income")) {
+                    addIncome(new Income(parts[1], Double.parseDouble(parts[2])));
+                } else if (parts[0].equalsIgnoreCase("expense")) {
+                    addExpense(new Expense(parts[1], Double.parseDouble(parts[2]), LocalDate.parse(parts[3])));
+                }
+            } catch (Exception e) {
+                System.err.println("Skipping invalid line: " + line);
+            }
+        }
+        reader.close();
+    }
+
 }
