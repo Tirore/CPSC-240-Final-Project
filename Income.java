@@ -1,7 +1,7 @@
 
 public class Income {
     private String type;
-    private double amount;
+    private static double amount;
 
     public Income (String type, double amount) {
         this.type = type;
