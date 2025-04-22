@@ -6,26 +6,25 @@
  * Income class for budget management program.
  */
 public class Income {
-    private String type;
-    private static double amount;
+    private String type; //Stores description of what type of income is being recorded.
+    private static double amount; //Store monetary value of income.
 
-    public Income (String type, double amount) {
+    public Income (String type, double amount) { //Initializes new income with type and amount.
         this.type = type;
         this.amount = amount;
     }
 
-    public String getType() {
+    public String getType() { //Returns type of income.
         return type;
     }
 
-    public static double getAmount() {
+    public static double getAmount() {//Returns amount across all income instances.
         return amount;
     }
 
     @Override
-    public String toString() {
+    public String toString() {//Returns string representation of incomes.
         return "Income from " + type + ": $" + amount;
     }
-
 
 }
