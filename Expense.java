@@ -1,3 +1,11 @@
+/**
+ * CPSC 240
+ * Final Project
+ * I pledge
+ * John McCloskey, Timothy Moore
+ * Expense class for budget management program.
+ */
+
 import java.time.LocalDate;
 
 

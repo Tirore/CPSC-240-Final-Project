@@ -1,3 +1,11 @@
+/**
+ * CPSC 240
+ * Final Project
+ * I pledge
+ * John McCloskey, Timothy Moore
+ * GUI class for budget management program.
+ */
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
