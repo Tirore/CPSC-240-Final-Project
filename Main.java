@@ -1,4 +1,10 @@
-
+/**
+ * CPSC 240
+ * Final Project
+ * I pledge
+ * John McCloskey, Timothy Moore
+ * Main class for budget management program.
+ */
 import java.util.*;
 import java.io.*;
 import java.time.LocalDate;

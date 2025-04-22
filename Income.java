@@ -1,4 +1,10 @@
-
+/**
+ * CPSC 240
+ * Final Project
+ * I pledge
+ * John McCloskey, Timothy Moore
+ * Income class for budget management program.
+ */
 public class Income {
     private String type;
     private static double amount;
