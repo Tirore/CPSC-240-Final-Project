@@ -23,7 +23,7 @@ public class Main { //Creates lists to dtores income and expense inputs.
 
     public double getTotalIncome () {//Adds up all income entries to calculate total
         return incomes.stream().mapToDouble(Income::getAmount).sum();
-    } .
+    }
 
     public double getTotalExpenses () { //Finds sum of all expenses.
         return expenses.stream().mapToDouble(Expense::getAmount).sum();
