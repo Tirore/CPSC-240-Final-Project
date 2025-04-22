@@ -1,0 +1,5 @@
+income,Part-Time Job,500.00
+income,Scholarship,1200.00
+expense,Rent,700.00,2025-04-25
+expense,Groceries,150.00,2025-04-20
+expense,Internet,60.00,2025-04-23
