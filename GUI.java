@@ -37,14 +37,21 @@ public class GUI extends JPanel {
         JButton importBtn = new JButton("Import Data");
         JButton exportBtn = new JButton("Export Report");
         JButton refreshBtn = new JButton("Refresh Summary");
+        JButton extBtn = new JButton("Exit");
+
+        extBtn.setBackground(Color.RED);
+        extBtn.setForeground(Color.white);
+        extBtn.setFocusPainted(false);
 
         importBtn.addActionListener(e -> importData());
         exportBtn.addActionListener(e -> exportReport());
         refreshBtn.addActionListener(e -> updateSummary());
+        extBtn.addActionListener(e -> System.exit(0));
 
         buttonPanel.add(importBtn);
         buttonPanel.add(exportBtn);
         buttonPanel.add(refreshBtn);
+        buttonPanel.add(extBtn);
         add(buttonPanel, BorderLayout.SOUTH);
     }
 
