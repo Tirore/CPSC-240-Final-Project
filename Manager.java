@@ -9,7 +9,7 @@ import java.util.*;
 import java.io.*;
 import java.time.LocalDate;
 
-public class Main { //Creates lists to dtores income and expense inputs.
+public class Manager { //Creates lists to dtores income and expense inputs.
     private List<Income> incomes = new ArrayList<>();
     private List<Expense> expenses = new ArrayList<>();
 
@@ -33,7 +33,7 @@ public class Main { //Creates lists to dtores income and expense inputs.
         return getTotalIncome() - getTotalExpenses();
     }
 
-    public List<Expense> getDueExpenses() {//Lists expenses due in next week.
+    public List<Expense> getUpcomingExpenses() { //Lists expenses due in next week.
         List<Expense> due = new ArrayList<>();
         for (Expense e : expenses) {
             if (e.isDue()) due.add(e);
@@ -41,7 +41,7 @@ public class Main { //Creates lists to dtores income and expense inputs.
         return due;
     }
 
-    public void genReport(String filePath) throws IOException {//Writes incomes, expenses, and balance to file.
+    public void genReport(String filePath) throws IOException { //Writes incomes, expenses, and balance to file.
         BufferedWriter writer = new BufferedWriter(new FileWriter(filePath));
         writer.write("=== Budget Report ===\n");
         writer.write("Incomes:\n");

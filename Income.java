@@ -18,7 +18,7 @@ public class Income {
         return type;
     }
 
-    public static double getAmount() {//Returns amount across all income instances.
+    public double getAmount() {//Returns amount across all income instances.
         return amount;
     }
 
