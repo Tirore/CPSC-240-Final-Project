@@ -3,7 +3,7 @@ income,Scholarship,1200.00
 expense,Rent,700.00,2025-04-25
 expense,Groceries,150.00,2025-04-20
 expense,Internet,60.00,2025-04-23
-income,DoorDash, 400.00
-expense,Insurance, 120.00, 2025-05-15
-expense,Phone Bell,50.00 2025-04-30
-income,Birthday Money, 20.00
+income,DoorDash,400.00
+expense,Insurance,120.00,2025-05-15
+expense,Phone Bill,50.00,2025-04-30
+income,Birthday Money,20.00
