@@ -7,7 +7,7 @@
  */
 public class Income {
     private String type; //Stores description of what type of income is being recorded.
-    private static double amount; //Store monetary value of income.
+    private double amount; //Store monetary value of income.
 
     public Income (String type, double amount) { //Initializes new income with type and amount.
         this.type = type;
